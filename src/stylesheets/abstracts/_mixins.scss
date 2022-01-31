@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+
+@mixin red {
+   * {
+      font-size: 2rem;
+      color: v.$red;
+   }
+}
+
+// above code is just a demo, will be removed soon

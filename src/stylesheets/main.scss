@@ -1,5 +1,6 @@
-@import "vendors/normalize";
-@import "abstracts/variables";
-@import "abstracts/mixins";
+@use 'vendors/normalize';
+@use 'abstracts/mixins' as m;
 
 
+//for testing the sass
+@include m.red;
