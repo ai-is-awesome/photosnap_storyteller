@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+
 import { BrowserRouter } from "react-router-dom";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./features/Home/HomePage";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
