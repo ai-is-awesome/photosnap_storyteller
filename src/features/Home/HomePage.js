@@ -3,12 +3,12 @@ import PhotoCard from "../PhotoCard/PhotoCard";
 import UserStory from "../UserStory/UserStory";
 
 export default function HomePage() {
-  const arr = [1];
   return (
     <>
       HELLO FROM HOMEPAGE
       <UserStory />
-      <PhotoCard />
+      <PhotoCard textTheme={"light"} textSide={"right"} />
+      <PhotoCard textTheme={"dark"} textSide={"left"} />
     </>
   );
 }

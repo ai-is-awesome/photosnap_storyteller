@@ -4,10 +4,9 @@
   flex-basis: 100%;
   background-color: blue;
   height: 85vh;
-  margin: 10px 0;
 }
 
-.pc__left_container {
+.pc__text_container {
   background-color: black;
   color: white;
   display: flex;
@@ -19,9 +18,28 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  h1 {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
 }
 
-.pc__right_container {
+.pc__img_container {
   background-color: cyan;
   flex-basis: 65%;
+}
+
+.pc__light_theme {
+  background-color: white;
+  color: black;
+}
+
+.pc__dark_theme {
+  background-color: black;
+  color: white;
 }
