@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./features/Home/HomePage";
+import "./stylesheets/main.scss";
 
 ReactDOM.render(
   <React.StrictMode>

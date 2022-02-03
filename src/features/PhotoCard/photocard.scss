@@ -1,0 +1,22 @@
+.pc__container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  background-color: blue;
+  height: 85vh;
+  margin: 10px 0;
+}
+
+.pc__left_container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 0;
+}
+
+.pc__right_container {
+  flex-grow: 0.1;
+}
