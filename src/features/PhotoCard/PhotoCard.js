@@ -2,8 +2,7 @@ import React from "react";
 import "./photocard.scss";
 import testImage from "./create-and-share.jpg";
 
-export default function PhotoCard() {
-  const textTheme = "light";
+export default function PhotoCard({ textSide, textTheme }) {
   return (
     <div className="pc__container">
       <div className="pc__left_container">
@@ -13,9 +12,7 @@ export default function PhotoCard() {
           make it easy to share photos, tell stories and connect with others.
         </p>
       </div>
-      <div className="pc__right_container" src={testImage}>
-        hello
-      </div>
+      <img className="pc__right_container" src={testImage} />
     </div>
   );
 }

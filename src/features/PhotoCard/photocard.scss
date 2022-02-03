@@ -14,9 +14,14 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  flex-grow: 0;
+  flex-basis: 35%;
+  p {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .pc__right_container {
-  flex-grow: 0.1;
+  background-color: cyan;
+  flex-basis: 65%;
 }
