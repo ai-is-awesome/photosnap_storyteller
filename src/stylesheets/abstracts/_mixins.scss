@@ -1,10 +1,29 @@
 @use 'variables' as v;
 
+@mixin flex_row {
+   display: flex;
+   flex-direction: row;
+}
 
-@mixin red {
-   * {
-      font-size: 2rem;
-      color: v.$red;
+@mixin  flex_column {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin  flex_center {
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin desktop {
+   @media (min-width: #{v.$desktop}) {
+       @content;
+   }
+}
+
+@mixin tablet {
+   @media (min-width: #{v.$tablet}) and (max-width: #{v.$desktop - 1px}) {
+       @content;
    }
 }
 
