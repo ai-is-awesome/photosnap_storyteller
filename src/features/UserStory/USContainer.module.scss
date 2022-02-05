@@ -1,0 +1,50 @@
+@use "../../stylesheets//abstracts/mixins" as *;
+
+
+.US__container {
+   width: 100%;
+
+}
+// home page 
+
+.US__layoutHome {
+   @include flex_column;
+}
+
+@include desktop {
+   .US__layoutHome {
+      @include flex_row;
+   }
+
+}
+@include tablet {
+   .US__layoutHome {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+   }
+}
+
+
+
+.US__layoutStory {
+   @include flex_column;
+}
+
+@include desktop {
+   .US__layoutStory {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+   }
+
+}
+
+@include tablet {
+   .US__layoutStory {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto;
+   }
+
+}
