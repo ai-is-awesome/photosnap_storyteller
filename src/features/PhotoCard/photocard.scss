@@ -43,3 +43,11 @@
   background-color: black;
   color: white;
 }
+
+@media only screen and (max-width: 750px) {
+  .pc__container {
+    flex-direction: column;
+  }
+  .pc__text_container {
+  }
+}

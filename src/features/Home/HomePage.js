@@ -1,6 +1,6 @@
 import React from "react";
 import PhotoCard from "../PhotoCard/PhotoCard";
-import UserStory from "../UserStory/UserStory";
+import UserStory from "../UserStory/UserStoryContainer";
 import data from "../../data";
 
 export default function HomePage() {
@@ -8,9 +8,18 @@ export default function HomePage() {
   return (
     <>
       HELLO FROM HOMEPAGE
-      <UserStory />
+      <UserStory page={"home"} isDesktop={true} />
       {/* <PhotoCard textTheme={"light"} textSide={"right"} />
       <PhotoCard textTheme={"dark"} textSide={"left"} /> */}
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1 style={{ textAlign: "center" }}>Share with us!</h1>
       {photoCardData.map((photoCard) => {
         return <PhotoCard {...photoCard} />;
       })}

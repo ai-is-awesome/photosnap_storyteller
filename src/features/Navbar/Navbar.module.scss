@@ -1,0 +1,95 @@
+@use "../../stylesheets/abstracts/mixins" as m;
+@use "../../stylesheets//abstracts//variables" as v;
+
+%links {
+  text-transform: uppercase;
+  color: v.$black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.nav {
+  @include m.flex-row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
+  position: relative;
+  z-index: 2;
+  font-family: v.$font;
+  @include m.desktop {
+    padding: 0 1.3rem;
+  }
+}
+
+.nb__mobile_links {
+  .nb__mobile_menu_icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    @include m.flex-row;
+    @include m.flex-center;
+  }
+}
+.nb__mobile_container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: v.$white;
+  @include m.flex-column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s linear;
+  .link {
+    margin: 0.8rem 0;
+    @extend %links;
+  }
+  // .active {
+  //    color: lightcoral;
+  // }
+  .button {
+    border-top: 2px solid lightgray;
+    margin-top: 0.5rem;
+    padding: 1.3rem 0 0;
+    width: 100%;
+    @include m.flex-column;
+    @include m.flex-center;
+    > button {
+      width: 100%;
+      padding: 1.3rem;
+      border: none;
+      background-color: v.$black;
+      text-transform: uppercase;
+      color: v.$white;
+    }
+  }
+}
+.nb__MenuOpen {
+  height: 16.5rem;
+  padding: 1.3rem 2rem;
+  opacity: 1;
+}
+
+.nb__desktop_links {
+  width: 100%;
+  @include m.flex-row;
+  @include m.flex-center;
+  .nb__dektop_container {
+    @include m.flex-row;
+
+    .link {
+      margin-right: 3rem;
+      @extend %links;
+      font-weight: bold;
+      padding: 1.5rem 0 1.3rem;
+    }
+
+    //active will color the active links --we dont have any working links and pages yet
+    // .active {
+    //    color: lightcoral;
+    // }
+  }
+}

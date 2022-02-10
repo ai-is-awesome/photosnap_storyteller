@@ -41,11 +41,6 @@ Stories
   by Timothy Wagner
   Read Story
 
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
   April 3rd 2020
   Unforeseen Corners
   by William Malcolm
