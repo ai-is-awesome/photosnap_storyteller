@@ -47,9 +47,9 @@
     margin: 0.8rem 0;
     @extend %links;
   }
-  // .active {
-  //    color: lightcoral;
-  // }
+  .active {
+     color: lightcoral;
+  }
   .button {
     border-top: 2px solid lightgray;
     margin-top: 0.5rem;
@@ -81,15 +81,15 @@
     @include m.flex-row;
 
     .link {
-      margin-right: 3rem;
+      margin-right: 4rem;
       @extend %links;
       font-weight: bold;
       padding: 1.5rem 0 1.3rem;
     }
 
     //active will color the active links --we dont have any working links and pages yet
-    // .active {
-    //    color: lightcoral;
-    // }
+    .active {
+       color: lightcoral;
+    }
   }
 }

@@ -16,7 +16,7 @@ export default function HomePage() {
     <>
       {photoCardRender}
       <h1 className="hp__title">Share with us!</h1>
-      <UserStory page={"home"} isDesktop={true} />
+      <UserStory page={"home"} />
       <Footer />
     </>
   );

@@ -10,13 +10,13 @@ export default function Links() {
 
   return (
      <>
-      <Link className={`${style.link} ${splitLocation[1] === "" ? style.active : ""}`} to="/">
+      <Link className={`${style.link} ${splitLocation[1] === "stories" ? style.active : ""}`} to="/stories">
          <p>stories</p>
       </Link>
-      <Link className={`${style.link} ${splitLocation[1] === "" ? style.active : ""}`} to="/">
+      <Link className={`${style.link} ${splitLocation[1] === "features" ? style.active : ""}`} to="/features">
          <p>features</p>
       </Link>
-      <Link className={`${style.link} ${splitLocation[1] === "" ? style.active : ""}`} to="/">
+      <Link className={`${style.link} ${splitLocation[1] === "pricing" ? style.active : ""}`} to="/pricing">
          <p>pricing</p>
       </Link>
      </>
