@@ -1,3 +1,6 @@
+@use "../../stylesheets/abstracts/variables" as v;
+@use "../../stylesheets/abstracts/mixins" as m;
+
 .pc__container {
   display: flex;
   flex-direction: row;
@@ -14,6 +17,7 @@
   justify-content: center;
   text-align: center;
   flex-basis: 35%;
+
   p {
     width: 80%;
     margin: 0 auto;
@@ -44,10 +48,22 @@
   color: white;
 }
 
-@media only screen and (max-width: 750px) {
+@include m.mobile {
   .pc__container {
     flex-direction: column;
+    height: auto;
   }
+
   .pc__text_container {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 10px;
+    min-height: 500px;
+  }
+
+  .pc__img_container {
+    flex-basis: auto;
   }
 }
+
+// Target 2nd 4th and 6th... even containers and do reverse direction for mobile layouts

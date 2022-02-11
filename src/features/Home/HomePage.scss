@@ -1,0 +1,15 @@
+@use "../../stylesheets/abstracts/variables" as v;
+@use "../../stylesheets/abstracts/mixins" as m;
+
+.hp__title {
+  text-align: center;
+  background-color: v.$gray-200;
+  margin: 0;
+  padding: 20px;
+}
+
+@include m.mobile {
+  .pc__text_container:nth-child(even) {
+    flex-direction: column-reverse !important;
+  }
+}

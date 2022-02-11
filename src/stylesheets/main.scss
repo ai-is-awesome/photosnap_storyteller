@@ -1,4 +1,9 @@
 @use "vendors/normalize";
 @use "abstracts/mixins" as *;
+@use "abstracts/variables" as v;
 
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: v.$font;
+}
