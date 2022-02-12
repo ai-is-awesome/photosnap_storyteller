@@ -1,4 +1,4 @@
-// import mImg0 from "../../../assets/Stories/mobile/moon-of-appalacia.jpg";
+import mImg0 from "../../../assets/Stories/mobile/moon-of-appalacia.jpg";
 import mImg1 from "../../../assets/Stories/mobile/mountains.jpg";
 import mImg2 from "../../../assets/Stories/mobile/18-days-voyage.jpg";
 import mImg3 from "../../../assets/Stories/mobile/cityscapes.jpg";
@@ -18,7 +18,7 @@ import mImg16 from "../../../assets/Stories/mobile/somwarpet.jpg";
 
 //desktop
 
-// import Img0 from "../../../assets/Stories/desktop/moon-of-appalacia.jpg";
+import dImg0 from "../../../assets/Stories/desktop/moon-of-appalacia.jpg";
 import dImg1 from "../../../assets/Stories/desktop/mountains.jpg";
 import dImg2 from "../../../assets/Stories/desktop/18-days-voyage.jpg";
 import dImg3 from "../../../assets/Stories/desktop/cityscapes.jpg";
@@ -201,3 +201,14 @@ export const StoryPageData = [
       author: "by William Malcolm",
    }
 ]
+
+export const FeaturedStory = {
+   id:1,
+   mImg: mImg0,
+   dImg: dImg0,
+   subTitle: "Last month's featured story",
+   title: "Hazy full moon of Appalachia",
+   date: "March 2nd 2020",
+   author: "by John Appleseed",
+   prevStory: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.'
+}
