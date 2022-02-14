@@ -1,0 +1,88 @@
+@use "../../../stylesheets/abstracts/mixins" as m;
+@use "../../../stylesheets/abstracts/variables" as v;
+
+.compare__container {
+   @include m.flex_column;
+   @include m.flex_center;
+   h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 3rem;
+   }
+}
+
+.compare__inner_container {
+   width: 90%;
+   @include m.desktop {
+      width: 60%;
+   }
+}
+
+@mixin text {
+   letter-spacing: 1px;
+   font-size: .8rem;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+@mixin columns {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+
+   > div {
+      @include text;
+      padding: 1rem 0;
+      @include m.flex_row;
+      @include m.flex_center;
+      
+      &:first-child {
+         justify-content: flex-start;
+      }
+   }
+}
+
+.compare__titles {
+   @include text;
+   font-size: 1rem;
+   padding-bottom: 1rem;
+   @include m.desktop {
+      @include columns;
+      padding-bottom: 0;
+   }
+   @include m.tablet {
+         @include columns;
+   }
+   border-bottom: 2px solid;
+}
+
+.compare__data {
+   @include text;
+   padding: 1rem 0;
+   @include m.desktop {
+      @include columns;
+   }
+   border-bottom: 2px solid lightgray;  
+}
+
+.compare__mobile_check {
+   > div {
+      margin: .5rem 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      &:first-child {
+         margin-top: 1rem;
+         color: gray;
+         > div {
+            @include m.flex_row;
+            @include m.flex_center;
+         }
+      }
+
+      &:last-child {
+         > div {
+            @include m.flex_row;
+            @include m.flex_center;
+         }
+      }
+   }
+}
