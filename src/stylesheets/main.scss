@@ -6,3 +6,11 @@
 body {
   font-family: v.$font;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}

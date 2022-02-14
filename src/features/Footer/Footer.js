@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import CopyrightText from "../../components/CopyrightText";
 import GetInvite from "../../components/GetInvite";
 import "./footer.scss";
+import { BsFacebook, BsYoutube } from "react-icons/bs";
+import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
+import { FaPinterest } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -13,10 +16,21 @@ export default function Footer() {
             LOGO <span>Photosnap</span>
           </div>
           <div className="fr__left_container_main_social">
-            <span>Link 1</span>
-            <span>Link 1</span>
-            <span>Link 1</span>
-            <span>Link 1</span>
+            <Link to="">
+              <BsFacebook className="fr__icon" />
+            </Link>
+            <Link to="">
+              <BsYoutube className="fr__icon" />
+            </Link>
+            <Link to="">
+              <AiFillTwitterCircle />
+            </Link>
+            <Link to="">
+              <FaPinterest />
+            </Link>
+            <Link to="">
+              <AiFillInstagram />
+            </Link>
           </div>
         </div>
         <div className="fr__left_container_links">
