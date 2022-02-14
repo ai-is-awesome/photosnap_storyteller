@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CopyrightText from "../../components/CopyrightText";
+import GetInvite from "../../components/GetInvite";
 import "./footer.scss";
 
 export default function Footer() {
@@ -24,7 +26,10 @@ export default function Footer() {
           <Link to={"/"}>Home</Link>
         </div>
       </div>
-      <div className="fr__right_container">Container 2</div>
+      <div className="fr__right_container">
+        <GetInvite />
+        <CopyrightText />
+      </div>
     </div>
   );
 }
