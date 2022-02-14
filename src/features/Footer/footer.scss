@@ -69,10 +69,28 @@
   .fr__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 
   .fr__left_container {
     display: flex;
     flex-direction: column;
+  }
+
+  .fr__left_container_main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fr__left_container_links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
