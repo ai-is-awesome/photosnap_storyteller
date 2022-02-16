@@ -48,7 +48,7 @@
     @extend %links;
   }
   .active {
-     color: lightcoral;
+    color: lightcoral;
   }
   .button {
     border-top: 2px solid lightgray;
@@ -89,7 +89,7 @@
 
     //active will color the active links --we dont have any working links and pages yet
     .active {
-       color: lightcoral;
+      color: lightcoral;
     }
   }
 }

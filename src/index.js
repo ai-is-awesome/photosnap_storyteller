@@ -10,8 +10,6 @@ import PricingPage from "./features/pages/PricingPage/PricingPage";
 import StoriesPage from "./features/pages/StoriesPage/StoriesPage";
 import "./stylesheets/main.scss";
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -26,4 +24,4 @@ ReactDOM.render(
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
-);  
+);

@@ -33,4 +33,13 @@
   }
 }
 
+@mixin faded_white {
+  color: white;
+  opacity: 0.6;
+}
+
+@mixin medium_line_height {
+  line-height: 1.667;
+}
+
 // above code is just a demo, will be removed soon

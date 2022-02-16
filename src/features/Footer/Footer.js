@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CopyrightText from "../../components/CopyrightText";
 import GetInvite from "../../components/GetInvite";
+import Logo from "../../assets/Shared/desktop/logo.svg";
+
 import "./footer.scss";
 import { BsFacebook, BsYoutube } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
@@ -13,7 +15,8 @@ export default function Footer() {
       <div className="fr__left_container">
         <div className="fr__left_container_main">
           <div>
-            LOGO <span>Photosnap</span>
+            {/* <img src={Logo} alt="logo" /> */}
+            <span>Photosnap</span>
           </div>
           <div className="fr__left_container_main_social">
             <Link to="">
