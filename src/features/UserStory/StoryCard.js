@@ -16,8 +16,10 @@ export default function StoryCard(props) {
         <img src={img} alt={props.item.heading} />
         <div className={style.sc__content}>
           {props.page === "home" ? null : <span>{props.item.date}</span>}
-          <p>{props.item.heading}</p>
-          <p>{props.item.author}</p>
+          <div className={style.sc__text_content}>
+            <p>{props.item.heading}</p>
+            <p>{props.item.author}</p>
+          </div>
           <div className={style.sc__link}>
             <p>read story</p>
             <img src={arrow} alt="->" />
