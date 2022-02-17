@@ -15,6 +15,9 @@
   align-items: center;
 }
 
+
+//MEDIA QUERIES
+
 @mixin desktop {
   @media (min-width: #{v.$desktop}) {
     @content;
@@ -33,4 +36,28 @@
   }
 }
 
-// above code is just a demo, will be removed soon
+//ANIMATIONS
+
+@mixin image-loading-animation {
+  @keyframes animate {
+    from {
+      background-position: left 0rem center;
+      color: rgba(240, 127, 127, .2);
+    }
+    to {
+      background-position: left 50rem center;
+    }
+  }
+  background: linear-gradient(90deg, rgba(240, 127, 127, .2), rgba(240, 127, 127, .4), rgba(240, 127, 127, .3), rgba(240, 127, 127, .2));
+   animation: animate 2s ease infinite;
+}
+
+@mixin link-hover-text-shadow {
+  &:hover {
+    text-shadow: 0px 0px 2px v.$white;
+    > img {
+      transform: translateX(-1rem);
+      
+    }
+ }
+}
