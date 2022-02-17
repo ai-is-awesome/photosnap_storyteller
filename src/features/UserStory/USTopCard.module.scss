@@ -5,6 +5,7 @@
    @include m.flex-column;
    position: relative;
    .utc__image_container {
+      @include m.image-loading-animation;
       > img {
          height: 100%;
          width: 100%;
@@ -81,11 +82,14 @@
 }
 
 .utc__link {
+   cursor: pointer;
    @include m.flex_row;
    align-items: center;
    text-transform: uppercase;
    font-weight: bold;
+   @include m.link-hover-text-shadow;
    > img {
+      transition: .3s ease-out;
       margin-left: 1rem;
       filter: invert(100%);
    }

@@ -13,7 +13,7 @@ export default function StoryCard(props) {
   return (
     <>
       <div className={style.sc__card}>
-        <img src={img} alt={img} />
+        <img src={img} alt={props.item.heading} />
         <div className={style.sc__content}>
           {props.page === "home" ? null : <span>{props.item.date}</span>}
           <div className={style.sc__text_content}>
