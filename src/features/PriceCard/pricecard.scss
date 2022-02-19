@@ -7,9 +7,8 @@
   @include m.flex-column;
   align-items: center;
   background-color: black;
-  color: white;
   padding: 70px 30px 40px 30px;
-  width: 22%;
+  width: 25%;
   margin: auto;
 }
 
@@ -43,12 +42,32 @@
   letter-spacing: 2px;
   font-size: 12px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .prc__time_period {
   @include m.faded_white;
 }
 
+.light {
+  background-color: hsl(0, 0%, 96%);
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
+.light .prc__description {
+  color: black;
+}
+
+.light .prc__cta {
+  background-color: black;
+  color: white;
+}
+
+// Responsive for mobile
 @include m.mobile {
   .prc__container {
     width: 100%;

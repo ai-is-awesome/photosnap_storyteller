@@ -1,0 +1,51 @@
+@use "../../stylesheets/abstracts/mixins" as m;
+
+.pcg__price_container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.pcg__price_container > * {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.pcg__toggle_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.pcg__button {
+  background-color: whitesmoke;
+  // border: whitesmoke 2px solid;
+  border: none;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+
+  transition: background-color 0.4s linear;
+
+  &:hover {
+    // border: black 2px solid;
+  }
+}
+
+.pcg__active_button {
+  background-color: black;
+  color: white;
+}
+
+@include m.mobile {
+  .pcg__price_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pcg__price_container > * {
+  }
+}

@@ -1,17 +1,26 @@
 import React from "react";
+import classNames from "classnames";
 import "./pricecard.scss";
 
-export default function PriceCard() {
+export default function PriceCard({
+  theme,
+  title,
+  description,
+  price,
+  timePeriod,
+  ctaText,
+}) {
+  const containerClasses = classNames(
+    "prc__container",
+    theme === "light" ? "light" : "dark"
+  );
   return (
-    <div className="prc__container">
-      <div className="prc__title">Pro</div>
-      <div className="prc__description">
-        More advanced features available. Recommended for photography veterans
-        and professionals.
-      </div>
-      <div className="prc__price">$39.00</div>
-      <div className="prc__time_period">Per Month</div>
-      <button className="prc__cta">Pick Plan</button>
+    <div className={containerClasses}>
+      <div className="prc__title">{title}</div>
+      <div className="prc__description">{description}</div>
+      <div className="prc__price">${price}</div>
+      <div className="prc__time_period">{timePeriod}</div>
+      <button className="prc__cta">{ctaText}</button>
     </div>
   );
 }

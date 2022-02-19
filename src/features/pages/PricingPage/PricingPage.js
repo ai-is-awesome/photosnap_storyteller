@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Compare from "./Compare";
-import PriceCard from "../../PriceCard/PriceCard";
+import PriceCardGroup from "../../PriceCard/PriceCardGroup";
 
 export default function PricingPage() {
   const isDesktop = useMediaQuery({
@@ -10,7 +10,7 @@ export default function PricingPage() {
 
   return (
     <>
-      <PriceCard />
+      <PriceCardGroup />
       <Compare desktop={isDesktop} />
     </>
   );
