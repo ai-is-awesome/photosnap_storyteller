@@ -10,6 +10,7 @@
    position: relative;  
    min-height: 33rem;
    max-height: 33rem;
+   height: 33rem;
    @include m.image-loading-animation;
    overflow:hidden;
    @include m.zoom-image-on-hover;

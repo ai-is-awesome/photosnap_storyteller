@@ -4,9 +4,11 @@
 .utc__container {
    @include m.flex-column;
    position: relative;
-   overflow: hidden;
+   
    .utc__image_container {
-     
+      height: 30rem;
+      max-height: 33rem;
+      overflow: hidden;
       &:hover {
          > img {
            transform: scale(1.1);
