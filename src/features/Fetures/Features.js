@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "./Features.module.scss"
-import { featuresData } from './data'
-
+import data from '../../data'
+const featuresData = data.featuresData;
 export default function Features(props) {
   return (
     <>

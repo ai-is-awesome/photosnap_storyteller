@@ -1,8 +1,10 @@
 import React from 'react'
 import style from "./Compare.module.scss"
 import check from "../../../assets/Pricing/desktop/check.svg"
-import { compareData, CompareTitles } from './Data'
+import data from '../../../data'
 
+const compareData = data.compareData;
+const CompareTitles = data.CompareTitles;
 const [ mobileTopTitle, ...otherTitles ] = CompareTitles
 
 export default function Compare({ desktop }) {

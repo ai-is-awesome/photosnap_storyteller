@@ -4,9 +4,21 @@
 .utc__container {
    @include m.flex-column;
    position: relative;
+   overflow: hidden;
    .utc__image_container {
+     
+      &:hover {
+         > img {
+           transform: scale(1.1);
+           filter:brightness(70%);
+        }
+        .sc__content { 
+           background: rgba(0,0,0,.3);
+        }
+       }
       @include m.image-loading-animation;
       > img {
+         transition: .3s ease-out;
          height: 100%;
          width: 100%;
       }
