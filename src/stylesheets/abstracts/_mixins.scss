@@ -38,6 +38,18 @@
 
 //ANIMATIONS
 
+@mixin zoom-image-on-hover {
+  &:hover {
+    > img {
+      transform: scale(1.1);
+      filter: saturate(160%) brightness(90%);
+   }
+   .sc__content { 
+      background: rgba(0,0,0,.3);
+   }
+  }
+}
+
 @mixin image-loading-animation {
   @keyframes animate {
     from {

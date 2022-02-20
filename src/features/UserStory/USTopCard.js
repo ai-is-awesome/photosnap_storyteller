@@ -1,15 +1,16 @@
 import React from 'react'
 import style from "./USTopCard.module.scss"
-import { FeaturedStory } from './Data/StoriesData'
 import { useMediaQuery } from "react-responsive";
 import arrow from "../../assets/Shared/desktop/arrow.svg";
+import data from '../../data';
 
+const FeaturedStory = data.FeaturedStory;
 
-const { id, mImg, dImg, subTitle, title, date, author, prevStory } = FeaturedStory;
 
 
 export default function USTopCard() {
-
+   const { id, mImg, dImg, subTitle, title, date, author, prevStory } = FeaturedStory;
+   
    const isDesktop = useMediaQuery({
       query: "(min-width: 1224px)",
     });
