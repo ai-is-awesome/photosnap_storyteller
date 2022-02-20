@@ -7,12 +7,12 @@ export default function StoryCard(props) {
   const isDesktop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
-
+  
   const img = isDesktop ? props.item.dImg : props.item.mImg;
 
   return (
     <>
-      <div className={style.sc__card}>
+      <div  className={style.sc__card}>
         <img src={img} alt={props.item.heading} />
         <div className={style.sc__content}>
           {props.page === "home" ? null : <span>{props.item.date}</span>}

@@ -18,13 +18,13 @@ export default function UserStory(props) {
       {props.page === "home" ? 
         <>
         {HomePageData.map(item => 
-          <StoryCard page={props.page} item={item} />
+          <StoryCard key={item.id} page={props.page} item={item} />
         )}
         </>
         :
         <>
         {StoryPageData.map(item => 
-          <StoryCard page={props.page} item={item} />
+          <StoryCard key={item.id} page={props.page} item={item} />
         )}
         </>
       }
