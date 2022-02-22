@@ -9,9 +9,9 @@ export default function PricingPage() {
   });
 
   return (
-    <>
+    <div>
       <PriceCardGroup />
       <Compare desktop={isDesktop} />
-    </>
+    </div>
   );
 }
