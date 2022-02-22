@@ -1,0 +1,23 @@
+@use "../../../stylesheets/abstracts/variables" as v;
+@use "../../../stylesheets/abstracts/mixins" as m;
+
+.addStory__icon {
+   background-color:v.$white;
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: .5rem;
+   position: fixed;
+   bottom: 3%;
+   right: 7%;
+   font-size: 2rem;
+   color: v.$black;
+   @include m.flex-row;
+   @include m.flex-center;
+   cursor: pointer;
+   @include m.desktop {
+      width: 3rem;
+      height: 3rem;
+      bottom: 3rem;
+      right: 3rem;
+   }
+}

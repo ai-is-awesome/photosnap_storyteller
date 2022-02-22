@@ -1,7 +1,10 @@
 import React from "react";
-import { HomePageData, StoryPageData } from "./Data/StoriesData";
 import StoryCard from "./StoryCard";
 import style from "./USContainer.module.scss";
+import data from "../../data";
+
+const StoryPageData = data.StoryPageData;
+const HomePageData = StoryPageData.slice(0,4);
 
 export default function UserStory(props) {
   
@@ -15,13 +18,13 @@ export default function UserStory(props) {
       {props.page === "home" ? 
         <>
         {HomePageData.map(item => 
-          <StoryCard page={props.page} item={item} />
+          <StoryCard key={item.id} page={props.page} item={item} />
         )}
         </>
         :
         <>
         {StoryPageData.map(item => 
-          <StoryCard page={props.page} item={item} />
+          <StoryCard key={item.id} page={props.page} item={item} />
         )}
         </>
       }

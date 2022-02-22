@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import UserStory from "../UserStory/UserStoryContainer";
 import data from "../../data";
 import "./HomePage.scss";
+import Features from "../Fetures/Features";
 
 export default function HomePage() {
   const photoCardData = data.photoCardData;
@@ -15,8 +16,8 @@ export default function HomePage() {
   return (
     <>
       {photoCardRender}
-      <h1 className="hp__title">Share with us!</h1>
       <UserStory page="home" />
+      <Features page="home" />
       <Footer />
     </>
   );
