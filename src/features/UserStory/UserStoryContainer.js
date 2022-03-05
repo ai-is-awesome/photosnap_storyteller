@@ -2,17 +2,19 @@ import React from "react";
 import StoryCard from "./StoryCard";
 import style from "./USContainer.module.scss";
 import data from "../../data";
-
-const StoryPageData = data.StoryPageData;
-const HomePageData = StoryPageData.slice(0,4);
+import {motion} from "framer-motion"
+// const StoryPageData = data.StoryPageData;
+const HomePageData = data.StoryPageData.slice(0,4);
 
 export default function UserStory(props) {
+
   
   const layoutClassName = props.page === "home" ? style.US__layoutHome : style.US__layoutStory
 
   return (
     <>
-    <section 
+    <motion.section 
+    layout
     className={`${style.US__container} ${layoutClassName} `}
     >
       {props.page === "home" ? 
@@ -23,12 +25,12 @@ export default function UserStory(props) {
         </>
         :
         <>
-        {StoryPageData.map(item => 
+        {props.StoryPageData.map(item => 
           <StoryCard key={item.id} page={props.page} item={item} />
         )}
         </>
       }
-    </section>
+    </motion.section>
     </>
   );
 }
