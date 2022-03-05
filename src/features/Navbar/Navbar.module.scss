@@ -10,12 +10,17 @@
 }
 
 .nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   @include m.flex-row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.3rem;
-  position: relative;
   z-index: 2;
+  max-height: 4rem;
+  background-color: rgba(255, 255, 255,.9);
   font-family: v.$font;
   @include m.desktop {
     padding: 0 1.3rem;
@@ -36,7 +41,7 @@
   left: 0;
   height: 0;
   width: 100%;
-  background-color: v.$white;
+  background-color: rgba(255, 255, 255,.9);
   @include m.flex-column;
   justify-content: space-evenly;
   align-items: center;
@@ -76,20 +81,20 @@
 .nb__desktop_links {
   width: 100%;
   @include m.flex-row;
-  @include m.flex-center;
+  justify-content: flex-end;
+  align-items: center;
   .nb__dektop_container {
     @include m.flex-row;
 
     .link {
-      margin-right: 4rem;
+      margin-right: 5rem;
       @extend %links;
       font-weight: bold;
       padding: 1.5rem 0 1.3rem;
     }
-
-    //active will color the active links --we dont have any working links and pages yet
     .active {
       color: lightcoral;
+      border-bottom: 3px solid;
     }
   }
 }
