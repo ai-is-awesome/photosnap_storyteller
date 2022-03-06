@@ -91,5 +91,15 @@
     .active {
       color: lightcoral;
     }
+    .cta_item {
+      cursor: pointer;
+      color: white;
+      background-color: v.$primaryColor1;
+      border: none;
+      border-radius: 4px;
+      padding: 2px 4px;
+      font-size: 16px;
+      font-weight: normal;
+    }
   }
 }
