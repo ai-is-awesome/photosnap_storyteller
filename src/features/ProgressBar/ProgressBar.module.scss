@@ -1,0 +1,23 @@
+.pb__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.pb__progress_container {
+  width: 400px;
+  background-color: lightgray;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+#progress {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+  border-radius: 30px;
+}

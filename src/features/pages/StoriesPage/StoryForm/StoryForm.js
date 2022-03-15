@@ -122,6 +122,7 @@ export default function StoryForm(props) {
 
           <SelectedFileUpload
             imageUrl={imageUrl}
+            file={selectedFile}
             closeBtnOnclick={() => setSelectedFile(null)}
           />
         </motion.section>

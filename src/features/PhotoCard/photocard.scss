@@ -10,16 +10,15 @@
 }
 
 .pc__text_container {
-  background-color: black;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   flex-basis: 35%;
+  line-height: 2;
 
   p {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -48,6 +47,10 @@
 .pc__dark_theme {
   background-color: black;
   color: white;
+
+  p {
+    opacity: 0.8;
+  }
 }
 
 @include m.mobile {

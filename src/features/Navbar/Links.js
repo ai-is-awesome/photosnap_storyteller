@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import StoryForm from "../pages/StoriesPage/StoryForm/StoryForm";
 import style from "./Navbar.module.scss";
 
 export default function Links() {
@@ -39,9 +40,15 @@ export default function Links() {
         className={`${style.cta_item} ${style.link} ${
           splitLocation[1] === "pricing" ? style.active : ""
         }`}
+        onClick={() => setStoryForm(true)}
       >
         <p>Add your Story!</p>
       </button>
+      {storyForm ? (
+        <StoryForm storyForm={storyForm} setStoryForm={setStoryForm} />
+      ) : (
+        ""
+      )}
     </>
   );
 }

@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./features/Loalding/Loading";
 import "./stylesheets/main.scss";
 import data from "./data";
+import "./Firebase/firebase";
+import UploadProgress from "./features/ProgressBar/ProgressBar";
 
 const App = React.lazy(() => import("./App"));
 const HomePage = React.lazy(() => import("./features/Home/HomePage"));
@@ -37,6 +39,7 @@ const Index = () => {
               path="/story/:id"
               element={<StoryPage StoryPageData={StoryPageData} />}
             />
+            <Route path="progress" element={<UploadProgress />} />
           </Route>
         </Routes>
       </React.Suspense>
