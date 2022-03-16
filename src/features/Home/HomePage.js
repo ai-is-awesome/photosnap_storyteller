@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PhotoCard from "../PhotoCard/PhotoCard";
-import Footer from "../Footer/Footer";
 import UserStory from "../UserStory/UserStoryContainer";
 import data from "../../data";
 import "./HomePage.scss";
@@ -31,7 +30,6 @@ export default function HomePage(props) {
         {photoCardRender}
         <UserStory page="home" />
         <Features page="home" />
-        <Footer />
         </motion.div>
       </section>
     </>

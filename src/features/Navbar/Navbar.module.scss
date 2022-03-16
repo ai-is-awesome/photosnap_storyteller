@@ -10,7 +10,7 @@
 }
 
 .nav {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,7 +20,7 @@
   padding: 1rem 1.3rem;
   z-index: 2;
   max-height: 4rem;
-  background-color: rgba(255, 255, 255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   font-family: v.$font;
   @include m.desktop {
     padding: 0 1.3rem;
@@ -41,13 +41,17 @@
   left: 0;
   height: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   @include m.flex-column;
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   opacity: 0;
   transition: 0.3s linear;
+  @include m.desktop {
+    @include m.flex-row;
+    @include m.flex-center;
+  }
   .link {
     margin: 0.8rem 0;
     @extend %links;
@@ -73,7 +77,7 @@
   }
 }
 .nb__MenuOpen {
-  height: 16.5rem;
+  height: 19rem;
   padding: 1.3rem 2rem;
   opacity: 1;
 }
@@ -85,7 +89,7 @@
   align-items: center;
   .nb__dektop_container {
     @include m.flex-row;
-
+    @include m.flex-center;
     .link {
       margin-right: 5rem;
       @extend %links;
@@ -96,5 +100,19 @@
       color: lightcoral;
       border-bottom: 3px solid;
     }
+  }
+}
+
+
+.cta_item {
+  cursor: pointer;
+  color: v.$white;
+  font-weight: bold;
+  border: none;
+  background-color: v.$black;
+  padding:.5rem 1rem;
+  text-transform: uppercase;
+  @include m.desktop {
+    margin-right: 1rem;
   }
 }

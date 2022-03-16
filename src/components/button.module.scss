@@ -1,0 +1,20 @@
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  width: 30%;
+  cursor: pointer;
+  transition: transform ease-in 0.2s;
+  lin- &:hover {
+    transform: scale(1.2);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

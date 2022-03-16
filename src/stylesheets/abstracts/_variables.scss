@@ -7,6 +7,7 @@ $font: "Kumbh Sans", sans-serif;
 
 $white: white;
 $Instagram_color: linear-gradient(90deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+
 $black: black;
 $black-1: hsla(0, 0%, 0%, .5);
 $main-gray: #b7bcc8;
@@ -16,3 +17,9 @@ $primaryColor2: #AB9084;
 $gray-100: rgb(243 244 246);
 $gray-200: rgb(229 231 235);
 $gray-300: hsl(220, 13%, 75%);
+
+// Shadows
+$shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+$shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
