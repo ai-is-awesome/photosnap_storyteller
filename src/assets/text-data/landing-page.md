@@ -43,7 +43,7 @@ Stories
   100% Responsive
 
   No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
+  look beautiful o n any screen.
 
   No Photo Upload Limit
 

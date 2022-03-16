@@ -11,7 +11,7 @@ export default function PhotoCard({
 }) {
   const textContainerClasses = classNames(
     "pc__text_container",
-    textTheme === "dark" ? ".pc__dark_theme" : "pc__light_theme"
+    textTheme === "dark" ? "pc__dark_theme" : "pc__light_theme"
   );
 
   const textContainer = (
