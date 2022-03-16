@@ -28,6 +28,8 @@ export default function StoriesPage(props) {
         <USTopCard />
         <UserStory StoryPageData={props.StoryPageData} page="stories" />
       </motion.section>
+
+      {/* //add story - getting the form popup */}
       <AddStory setStoryForm={setStoryForm} />
       {storyForm ? 
         <StoryForm storyForm={storyForm} setStoryForm={setStoryForm}/> 
