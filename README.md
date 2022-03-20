@@ -1,5 +1,5 @@
 # Links
-- Live link - [https://photosnap-storyteller.netlify.app/](https://photosnap-storyteller.netlify.app/)
+- Live link -
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
